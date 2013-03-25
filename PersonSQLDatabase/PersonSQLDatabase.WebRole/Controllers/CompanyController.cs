@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using PersonSQLDatabase.WebRole.Models;
 
 namespace PersonSQLDatabase.WebRole.Controllers
@@ -8,22 +7,9 @@ namespace PersonSQLDatabase.WebRole.Controllers
     {
         public ActionResult Index()
         {
-            var persons = new List<Person>
-                              {
-                                  new Person
-                                      {
-                                          FirstName = "Albert",
-                                          LastName = "Einstein",
-                                          Email = "albert@einstein.com"
-                                      },
-                                  new Person
-                                      {
-                                          FirstName = "Isaac",
-                                          LastName = "Newton",
-                                          Email = "isaac@newton.com"
-                                      }
-                              };
-            var company = new Company { Persons = persons };
+            var company = new Company();
+            company.PopulateWithPersons();
+
             return View(company);
         }
 
