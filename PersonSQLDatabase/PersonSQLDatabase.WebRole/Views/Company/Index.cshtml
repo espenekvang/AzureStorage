@@ -1,0 +1,14 @@
+﻿@model PersonSQLDatabase.WebRole.Models.Company
+
+<h2>List of Persons</h2>
+
+<table>
+    @foreach (var person in Model.Persons)
+    {
+        <tr>
+            <td>@person.FirstName</td>
+            <td>@person.LastName</td>
+            <td>@person.Email</td>
+        </tr>
+    }
+</table>
