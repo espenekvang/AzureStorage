@@ -4,6 +4,7 @@
     <Instances count="1" />
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=persontablestorage;AccountKey=7pgRx/C9lJMoOsUTZWlQ5ic5s4mqhDqZLDzDXFNbzaWwZQ5jqLTpeCd/AlNPe/TvgPDHHx+h6/UnH0qpI76lWQ==" />
+      <Setting name="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=persontablestorage;AccountKey=7pgRx/C9lJMoOsUTZWlQ5ic5s4mqhDqZLDzDXFNbzaWwZQ5jqLTpeCd/AlNPe/TvgPDHHx+h6/UnH0qpI76lWQ==" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>
